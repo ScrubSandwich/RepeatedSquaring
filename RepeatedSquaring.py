@@ -1,5 +1,14 @@
 # Repeated Squaring
 
+import sys
+
+if len(sys.argv) != 3:
+    print("python Usage: repeatedSquaring [baseNumeber] [exponent]")
+    sys.exit()
+
+baseNumber = int(sys.argv[1])
+exponent = int(sys.argv[2])
+
 def exp(base, i):
     if i == 0:
         return 1
@@ -13,4 +22,4 @@ def exp(base, i):
     alpha = exp(base, (i - 1) / 2)
     return alpha * alpha * base
     
-print(exp(2, 1000))
+print(exp(baseNumber, exponent))
