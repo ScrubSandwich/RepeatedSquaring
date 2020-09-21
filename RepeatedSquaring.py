@@ -3,7 +3,7 @@
 import sys
 
 if len(sys.argv) != 3:
-    print("python Usage: repeatedSquaring [baseNumeber] [exponent]")
+    print("Usage: python repeatedSquaring.py [baseNumeber] [exponent]")
     sys.exit()
 
 baseNumber = int(sys.argv[1])
